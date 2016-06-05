@@ -1,21 +1,19 @@
 $font_size: 20px;
 $background_color: #f58f4e;
 $color: #424140;
+$border_radius: 20px;
+
 $hover_background_color: #2098d1;
 $hover_color: #ffffff;
 
-$animation_time: 1s;
 
 .marquee{
+    border-radius: $border_radius;
+
+
     height: 100%;
     margin: 0px auto;
     overflow-y: hidden;
-
-    // changable
-    background: $background-color;
-    border-radius: 20px;
-    color: $color;
-    //
 
     text-align: center;
 
@@ -32,8 +30,12 @@ $animation_time: 1s;
     }
 
     div{
-        position :relative;
+        background: $background-color;
+        color: $color;
         font-size: $font_size;
+
+
+        position :relative;
         height: 100%;
         margin: 0px;
         display: flex;
@@ -41,16 +43,6 @@ $animation_time: 1s;
         justify-content: center;
     }
 
-}
-
-.scroll_up{
-
-        // animation
-        // browser support
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation: upMove $animation_time;
-        animation: upMove $animation_time;
 }
 
 @-webkit-keyframes upMove {

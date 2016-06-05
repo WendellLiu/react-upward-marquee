@@ -4,8 +4,12 @@ import TimerMixin from 'react-timer-mixin';
 const ScrollUpable = React.createClass({
   mixins: [TimerMixin],
   propTypes: {
-    current: PropTypes.object,
-    to_next_content: PropTypes.func
+    current: PropTypes.shape({
+      above: PropTypes.string,
+      below: PropTypes.string,
+      time: PropTypes.number
+    }).isRequired,
+    to_next_content: PropTypes.func.isRequired
   },
   getInitialState: function(){
     return {
@@ -23,7 +27,6 @@ const ScrollUpable = React.createClass({
     const current = this.props.current
     const setTimeout = this.setTimeout
     const to_next_content = this.props.to_next_content
-    console.log('wait time', current.time)
 
     setTimeout(
       function(){
@@ -41,11 +44,10 @@ const ScrollUpable = React.createClass({
     if(!this.state.scrollUp){
       this.handle_change()
     }
-
       return(
-        <div className="marquee">
-          <p className={this.state.scrollUp ? "scroll_up" : ""}>{current.above}</p>
-          <p className={this.state.scrollUp ? "scroll_up" : ""}>{current.below}</p>
+        <div className='marquee'>
+          <div className={this.state.scrollUp ? 'scroll_up' : ''}>{current.above}</div>
+          <div className={this.state.scrollUp ? 'scroll_up' : ''}>{current.below}</div>
         </div>
       )
   }

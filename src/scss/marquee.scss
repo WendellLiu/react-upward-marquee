@@ -1,17 +1,22 @@
-$block_height: 50px;
 $font_size: 20px;
-$end: 50px;
+$background_color: #f58f4e;
+$color: #424140;
+$hover_background_color: #2098d1;
+$hover_color: #ffffff;
+
+$animation_time: 1s;
 
 .marquee{
-    height: $block_height;
-    width:70%;
+    height: 100%;
     margin: 0px auto;
-    background: #f58f4e;
     overflow-y: hidden;
 
+    // changable
+    background: $background-color;
     border-radius: 20px;
+    color: $color;
+    //
 
-    color:#424140;
     text-align: center;
 
     -webkit-transition-duration: 0.3s;
@@ -20,16 +25,20 @@ $end: 50px;
     transition-property: color, background-color;
 
     &:hover{
-        background-color: #2098d1;
-        color: white;
+      // changable
+      background-color: $hover_background_color;
+      color: $hover_color;
+      //
     }
 
-    p{
+    div{
         position :relative;
         font-size: $font_size;
-        line-height: $block_height;
+        height: 100%;
         margin: 0px;
-        // top: $block_height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -40,17 +49,17 @@ $end: 50px;
         // browser support
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear;
-        -webkit-animation: upMove 1s;
-        animation: upMove 1s;
+        -webkit-animation: upMove $animation_time;
+        animation: upMove $animation_time;
 }
 
 @-webkit-keyframes upMove {
     0% {top: 0;}
-    100%   {top: -$end;}
+    100%   {top: -100%;}
 }
 
 
 @keyframes upMove {
     0% {top: 0;}
-    100%   {top: -$end;}
+    100%   {top: -100%;}
 }

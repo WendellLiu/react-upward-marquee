@@ -21,14 +21,6 @@ $hover_color: #ffffff;
     transition-duration: 0.3s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-
-    &:hover{
-      // changable
-      background-color: $hover_background_color;
-      color: $hover_color;
-      //
-    }
-
     div{
         background: $background-color;
         color: $color;

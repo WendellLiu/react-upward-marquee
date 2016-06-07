@@ -3,3 +3,6 @@ npm-debug.log
 .DS_Store
 dist
 lib
+index.html
+server.js
+webpack*.config.js

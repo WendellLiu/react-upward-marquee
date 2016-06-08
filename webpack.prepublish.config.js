@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './dist/index'
+    './src/index'
   ],
   output: {
     path: path.join(__dirname, 'lib'),
@@ -11,6 +11,19 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: ['react', 'react-dom', 'react-timer-mixin'],
+  module: {
+    loaders: [
+      {
+      test: /\.js$/,
+      loaders: ['react-hot', 'babel'],
+      include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      },
+    ]
+  },
   resolve: {
         extensions: ['', '.js', '.json', '.jsx', '.scss']
     }

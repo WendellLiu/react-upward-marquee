@@ -1,13 +1,12 @@
 {
   "name": "react-upward-marquee",
-  "version": "0.0.3",
+  "version": "1.0.5",
   "description": "an upward marquee react components",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
     "build": "webpack -p",
-    "prepublish": "npm run babel-build && webpack --config webpack.prepublish.config.js",
-    "babel-build": "webpack --config webpack.babel.config.js"
+    "prepublish": "webpack --config webpack.prepublish.config.js"
   },
   "main": "./lib/index.js",
   "repository": {
@@ -49,10 +48,10 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
-    "react-dom": ">=0.14.6"
   },
   "peerDependencies": {
     "react-timer-mixin": "^0.13.3",
-    "react": ">=0.14.6"
+    "react": ">=0.14.6",
+    "react-dom": ">=0.14.6"
   }
 }

@@ -1,8 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {Marquee} from '../dist/index'
+import Marquee from '../lib/index'
 
-console.log(Marquee)
 
 let data = [
   {

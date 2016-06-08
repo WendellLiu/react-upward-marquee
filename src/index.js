@@ -4,4 +4,4 @@ var Marquee = require('./components/Marquee')
 import './scss/marquee'
 
 
-export default Marquee
+module.exports = Marquee

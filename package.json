@@ -1,6 +1,6 @@
 {
   "name": "react-upward-marquee",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "an upward marquee react components",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "prepublish": "npm run babel-build && webpack --config webpack.prepublish.config.js",
     "babel-build": "webpack --config webpack.babel.config.js"
   },
-  "main": "./lib/index",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/WendellLiu/react-upward-marquee"

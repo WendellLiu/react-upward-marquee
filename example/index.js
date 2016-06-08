@@ -1,9 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Marquee from './components/Marquee'
+import {Marquee} from '../dist/index'
 
-// style
-import './scss/marquee'
+console.log(Marquee)
 
 let data = [
   {

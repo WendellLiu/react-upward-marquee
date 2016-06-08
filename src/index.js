@@ -1,3 +1,7 @@
 var Marquee = require('./components/Marquee')
 
-module.exports = Marquee
+// style
+import './scss/marquee'
+
+
+export default Marquee

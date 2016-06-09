@@ -1,6 +1,6 @@
 {
   "name": "react-upward-marquee",
-  "version": "1.0.6",
+  "version": "1.1.1",
   "description": "an upward marquee react components",
   "scripts": {
     "start": "node server.js",
@@ -48,9 +48,9 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "react-timer-mixin": ">=0.13.3"
   },
   "peerDependencies": {
-    "react-timer-mixin": "^0.13.3",
     "react": ">=0.14.6",
     "react-dom": ">=0.14.6"
   }

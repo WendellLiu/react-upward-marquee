@@ -12,19 +12,19 @@ import Marquee from 'react-upward-marquee'
 
 let data = [
   {
-    content: 'I'm the first content and my delay is 2s',
+    content: "I'm the first content and my delay is 2s",
     time:2
   },
   {
-    content: 'I'm the second content and my delay is 4s',
+    content: "I'm the second content and my delay is 4s",
     time:4
   },
   {
-    content: 'I'm the third content and my delay is 6s',
+    content: "I'm the third content and my delay is 6s",
     time:6
   },
   {
-    content: 'I'm the forth content and my delay is 8s',
+    content: "I'm the forth content and my delay is 8s",
     time:8
   }
 ]

@@ -52,7 +52,7 @@ render(
 | animationTime(ms)  | number    |   `1000` | false|
 | animationTimingFunction | string  |    '`ease`' | false|
 
-## demo
+## Demo
 ```
 git clone git@github.com:WendellLiu/react-upward-marquee.git
 npm install --save

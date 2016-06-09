@@ -1,5 +1,7 @@
 # React-Upward-Marquee
 
+![react-upward-marquee](https://raw.githubusercontent.com/WendellLiu/react-upward-marquee/master/img/example.gif)
+
 ## Install
 `npm install --save react-upward-marquee`
 

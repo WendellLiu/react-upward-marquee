@@ -5,19 +5,19 @@ import Marquee from '../lib/index'
 
 let data = [
   {
-    content: '我是第一個總共維持二秒鐘 我是第一個總共維持二秒鐘',
+    content: "I'm the first content and my delay is 2s",
     time:2
   },
   {
-    content: '我是第二個總共維持四秒鐘 我是第二個總共維持四秒鐘',
+    content: "I'm the second content and my delay is 4s",
     time:4
   },
   {
-    content: '我是第三個總共維持六秒鐘 我是第三個總共維持六秒鐘',
+    content: "I'm the third content and my delay is 6s",
     time:6
   },
   {
-    content: '我是第四個總共維持八秒鐘 我是第四個總共維持八秒鐘',
+    content: "I'm the forth content and my delay is 8s",
     time:8
   }
 ]
